@@ -1,0 +1,134 @@
+/* STYLE.CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.2%;
+}
+
+body{
+    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background: linear-gradient(30deg, rgba(38,38,255,1) 0%, rgba(131,37,255,1) 73%);
+    font-size: 2rem;
+    font-family: garamond;
+}
+
+.title{
+    margin: 0 0 4rem 0;
+    color: white;
+    font-size: 8rem;
+}
+
+.container {
+    width: 50rem;
+    height: 65rem;
+    background-color: white;
+    border-radius: 1rem 12rem;
+    transition: 0.2s;
+    padding: 3rem 7rem ;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container:hover{
+    box-shadow:
+  0px 0px 3.6px rgba(0, 0, 0, 0.165),
+  0px 0px 29px rgba(0, 0, 0, 0.33);
+  transform: scale(1.009) translateY(-0.09rem);
+}
+
+.container h1{
+    color: black;
+}
+
+.box{
+    text-align: center;
+    width: 100%;
+    height: 7rem;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.6rem;
+}
+
+input{
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: none;
+    
+}
+/* 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} */
+
+/* input[type=number] {
+    -moz-appearance:textfield; 
+} */
+
+button{
+    padding: 1rem 3rem;
+    border-radius: 50rem;
+    border: none;
+    background: rgb(181, 114, 243);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.clear{
+    display: none;
+}
+
+.buttons{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media(max-width:1000px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+
+@media(max-width:550px){
+    html{
+        font-size: 30%;
+    }
+}
+
+@media(max-width:250px){
+    html{
+        font-size: 20%;
+    }
+}
